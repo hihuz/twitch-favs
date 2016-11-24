@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+  <meta name="author" content="Sylvain Boulade">
+  <title>Twitch Favorites</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="twitch-app">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item nav-item-cur"><a class="nav-link" data-filter="all" href="#">All</a></li>
+        <li class="nav-item"><a class="nav-link" data-filter="live" href="#">Live</a></li>
+        <li class="nav-item"><a class="nav-link" data-filter="offline" href="#">Offline</a></li>
+      </ul>
+    </nav>
+    <main>
+    </main>
+    <div class="add-box">
+      <div class="add-box-content">
+        Channel name:
+        <input type="text" class="add-box-input">
+        <button class="add-box-validate"><i class="icon-checkmark"></i></button>
+      </div>
+      <button class="add-button">+</button>
+    </div>
+  </div>
+  <div class="overlay">
+    <div class="loader">Loading...</div>
+    <div class="dialog hidden">
+      <p class="dialog-message"></p>
+      <button class="dialog-button dialog-confirm">Confirm</button>
+      <button class="dialog-button dialog-cancel">Cancel</button>
+    </div>
+  </div>
+  <div class="alert hidden">
+    <i class="icon-cross alert-close"></i>
+    <p class="alert-message"></p>
+  </div>
+  <div class="stream-template">
+    <article class="stream">
+      <div class="stream-viewers"><i class="icon-eye"></i> {{viewers}}</div>
+      <div class="stream-image stream-section">
+      </div>
+      <div class="stream-content stream-section">
+        <div class="stream-infos">
+          <h2 class="stream-content-name">{{name}}</h2>
+          <h3 class="stream-content-title"><span class="stream-status">{{statusText}}</span> {{title}}</h3>
+          <p class="stream-content-details">{{game}}</p>
+        </div>
+        <div class="stream-control">
+          <button class="stream-control-button channel-link">Go to channel</button>
+          <button class="stream-control-button remove">Remove from list</button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/eventemitter3/2.0.2/index.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/superagent/2.3.0/superagent.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/utility.js"></script>
+  <script src="js/app-logic.js"></script>
+  <script src="js/user-input.js"></script>
+  <script src="js/view.js"></script>
+</body>
+</html>
