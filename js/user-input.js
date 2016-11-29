@@ -11,12 +11,15 @@
 const UserInput = (function() {
   const $ = Utility.$;
   const $$ = Utility.$$;
+  const addButton = $(".add-button");
+  const addBox = $(".add-box");
+  const addInput = $(".add-box-input");
   let addBoxOpened = false;
   let contextChannel;
 
   function toggleAddBox() {
-    $(".add-button").classList.toggle("opened");
-    $(".add-box").classList.toggle("opened");
+    addButton.classList.toggle("opened");
+    addBox.classList.toggle("opened");
     addBoxOpened = !addBoxOpened;
   }
 
@@ -67,7 +70,6 @@ const UserInput = (function() {
   }
 
   function handleAddValidateClick(e) {
-    const addInput = $(".add-box-input");
     if (addInput.value.length > 0) {
       toggleAddBox();
       let searchValue = encodeURI(addInput.value);

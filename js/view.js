@@ -13,6 +13,7 @@ const View = (function() {
   const $ = Utility.$;
   const $$ = Utility.$$;
 
+  const streamTemplate = $(".stream-template .stream");
   const add = $(".add-button");
   const addContent = $(".add-box-content");
   const addInput = $(".add-box-input");
@@ -140,7 +141,7 @@ const View = (function() {
   /**** HANDLE RESPONSES TO APP LOGIC EVENTS BELOW ****/
   function buildChannelDOM(chanData, appendFunc) {
     if (!appendFunc) { appendFunc = appendLast; }
-    const template = instantiateTemplate($(".stream-template .stream"), chanData);
+    const template = instantiateTemplate(streamTemplate, chanData);
     const image = chanData.image;
     const status = chanData.status;
     if (status == "live") {
