@@ -185,6 +185,7 @@ const AppLogic = (function() {
   //if data, means channel is already in the store
   //forward duplicate info to view, or gather data accordingly
   function addChannel(channel) {
+    if (channel) { channel = channel.toLowerCase(); }
     const data = store.get(channel);
     if (data) {
       EV.emit("view-duplicate", data.name);
