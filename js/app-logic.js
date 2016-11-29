@@ -82,7 +82,7 @@ const AppLogic = (function() {
     }
     else {
       //savjz, hsdogdog, kolento, strifecro are among my favorite hearthstone streamers :>
-      list = ["savjz", "freecodecamp", "ESL_SC2", "faceittv", "milleniumtv", "hsdogdog", "kolento", "strifecro"];
+      list = ["savjz", "freecodecamp", "esl_sc2", "faceittv", "milleniumtv", "hsdogdog", "kolento", "strifecro"];
     }
     return list;
   }
@@ -92,6 +92,7 @@ const AppLogic = (function() {
   //!!This is better than the other way around coz there is no way to know if a channel is online from the channel api!!
   //if channel does not exist : callback with 404 status
   function  gatherStreamData(stream, cb) {
+    if (stream) { stream = stream.toLowerCase(); }
     const url = "https://api.twitch.tv/kraken/streams/" + stream;
     let results;
     superagent.get(url)
@@ -103,7 +104,7 @@ const AppLogic = (function() {
         if (resp.status == 404) {
           results = {
             channel: stream,
-            status: "404",
+            status: "404"
           };
           return cb(results);
         }
@@ -134,6 +135,7 @@ const AppLogic = (function() {
   //takes a channel name and a callback
   //this is called everytime a channel in the list is offline so we can at least get channel data to display
   function gatherChannelData(channel, cb) {
+    if (channel) { channel = channel.toLowerCase(); }
     const url = "https://api.twitch.tv/kraken/channels/" + channel;
     superagent.get(url)
     .set("Client-ID", "i9ngqvifr89bi64sfe95ayy2u2xs5q1")
@@ -177,7 +179,7 @@ const AppLogic = (function() {
         return streamPromise;
       })
       .then(cb);
-    },Promise.resolve()); //init promise chain
+    }, Promise.resolve()); //init promise chain
   }
 
   //if data, means channel is already in the store
