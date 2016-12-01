@@ -19,7 +19,7 @@ const Utility = (function() {
 
   return {
     $: $,
-    $$: $$
+    $$: $$,
   }
 
 })();

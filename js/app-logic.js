@@ -15,13 +15,12 @@
   - add a "list sort" interface + view, this would imply a different menu most likely
 */
 
-//TODO : !!!!! forward info to view in addChannel to know if the item should be added on top !!!!!
 //TODO : encapsulate the "store" so that it can only be accessed through its interface
 //TODO (maybe) : change it so that the actual remote API AND ajax library are abstracted from here
 //TODO (maybe) : see where the best place is for pushToDb()
 
 const AppLogic = (function() {
-
+  const ajax = Utility.ajax;
   const store = {
     list: [],
     data: Object.create(null),
