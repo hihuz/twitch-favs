@@ -20,7 +20,6 @@
 //TODO (maybe) : see where the best place is for pushToDb()
 
 const AppLogic = (function() {
-  const ajax = Utility.ajax;
   const store = {
     list: [],
     data: Object.create(null),
@@ -81,7 +80,7 @@ const AppLogic = (function() {
     }
     else {
       //savjz, hsdogdog, kolento, strifecro are among my favorite hearthstone streamers :>
-      list = ["savjz", "freecodecamp", "esl_sc2", "faceittv", "milleniumtv", "hsdogdog", "kolento", "strifecro"];
+      list = ["savjz", "esl_sc2", "faceittv", "milleniumtv", "freecodecamp", "thepracticaldev", "hsdogdog", "kolento", "strifecro"];
     }
     return list;
   }
