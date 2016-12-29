@@ -7,7 +7,7 @@ Sample app using twitch.tv API, no framework
 
 ####notes:
 * UI inspired by MDL & codrops
-* code is not minified / bundled as I am still updating it a lot and didn't want to use heavy tools for this project
+* code is not minified / bundled as this is just an example project
 * API Key is temporary for tests and will be be removed / deleted
 * project should be available through github pages : https://hihuz.github.io/twitch-favs/
 
