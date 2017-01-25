@@ -207,7 +207,6 @@ const AppLogic = (function() {
   }
 
   function filterList(filter) {
-    console.log(filter);
     const fullList = store.getList();
     const filteredList = getFilteredList(filter, fullList);
     fullList.forEach(function(channel) {

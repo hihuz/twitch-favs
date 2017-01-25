@@ -1,6 +1,6 @@
-/* heavily inspired by MDL and some demos over at codrops */
+
+  font-family: 'icomoon';/* heavily inspired by MDL and some demos over at codrops */
 @font-face {
-  font-family: 'icomoon';
   src:  url('fonts/icomoon.eot?wxws2y');
   src:  url('fonts/icomoon.eot?wxws2y#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?wxws2y') format('truetype'),
@@ -436,6 +436,7 @@ nav {
   left: 50%;
   margin-left: -300px;
   width: 600px;
+  max-width: 100%;
   text-align: center;
   padding: 25px;
   background: #f2dede;
@@ -492,6 +493,11 @@ nav {
   }
   .stream-control-button {
     min-width: 125px;
+  }
+  .alert {
+    margin-left: 0;
+    left: 0;
+    top: 0;
   }
 }
 @media (max-width: 480px) {

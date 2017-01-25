@@ -77,7 +77,6 @@ const View = (function() {
     alert.classList.add("hidden");
   }
   function showAlert(msg) {
-    console.log(msg);
     alertMsg.textContent = msg;
     alert.classList.remove("hidden");
     setTimeout(function() {

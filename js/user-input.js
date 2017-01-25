@@ -29,7 +29,6 @@ const UserInput = (function() {
     const filter = e.target.getAttribute("data-filter");
     if (cur) { cur.classList.remove("nav-item-cur"); }
     item.classList.add("nav-item-cur");
-    console.log(filter);
     EV.emit("app-logic-filter", filter);
   }
 
