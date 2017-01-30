@@ -1,6 +1,5 @@
-
-  font-family: 'icomoon';/* heavily inspired by MDL and some demos over at codrops */
 @font-face {
+  font-family: 'icomoon';
   src:  url('fonts/icomoon.eot?wxws2y');
   src:  url('fonts/icomoon.eot?wxws2y#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?wxws2y') format('truetype'),
