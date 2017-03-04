@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\Dev\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\Sac a Moule\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'build' ]
+2 info using npm@3.10.5
+3 info using node@v6.9.1
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info lifecycle twitch-app@1.0.0~prebuild: twitch-app@1.0.0
+6 silly lifecycle twitch-app@1.0.0~prebuild: no script for prebuild, continuing
+7 info lifecycle twitch-app@1.0.0~build: twitch-app@1.0.0
+8 verbose lifecycle twitch-app@1.0.0~build: unsafe-perm in lifecycle true
+9 verbose lifecycle twitch-app@1.0.0~build: PATH: C:\Users\Sac a Moule\AppData\Roaming\npm\node_modules\npm\bin\node-gyp-bin;E:\Dev\twitch-app\node_modules\.bin;E:\Dev\nodejs;E:\Dev\cmder\bin;E:\Dev\cmder\vendor\conemu-maximus5\ConEmu\Scripts;E:\Dev\cmder\vendor\conemu-maximus5;E:\Dev\cmder\vendor\conemu-maximus5\ConEmu;C:\Users\Sac a Moule\AppData\Local\GitHub\PortableGit_d7effa1a4a322478cd29c826b52a0c118ad3db11\cmd;C:\Users\Sac a Moule\AppData\Local\GitHub\PortableGit_d7effa1a4a322478cd29c826b52a0c118ad3db11\usr\bin;C:\Users\Sac a Moule\AppData\Local\GitHub\PortableGit_d7effa1a4a322478cd29c826b52a0c118ad3db11\usr\share\git-tfs;C:\Users\Sac a Moule\AppData\Local\Apps\2.0\9LYTEXJ2.PVB\K9E40JAL.KCD\gith..tion_317444273a93ac29_0003.0003_665ccbdbd3c2d8d4;C:\Users\Sac a Moule\AppData\Local\GitHub\lfs-amd64_1.3.1;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;E:\Program Files\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;E:\Dev\nodejs\;E:\Python\Python35-32\Scripts\;E:\Python\Python35-32\;C:\Program Files\Satsuki Decoder Pack\Filtres;C:\Users\Sac a Moule\AppData\Roaming\npm;C:\Windows\Microsoft.NET\Framework\v4.0.30319\;C:\Users\Sac a Moule\AppData\Local\GitHub\PortableGit_d7effa1a4a322478cd29c826b52a0c118ad3db11\usr\bin;C:\Users\Sac a Moule\AppData\Local\GitHub\PortableGit_d7effa1a4a322478cd29c826b52a0c118ad3db11\usr\share\vim\vim74;E:\Dev\cmder\
+10 verbose lifecycle twitch-app@1.0.0~build: CWD: E:\Dev\twitch-app
+11 silly lifecycle twitch-app@1.0.0~build: Args: [ '/d /s /c', 'webpack -p --env.prod' ]
+12 silly lifecycle twitch-app@1.0.0~build: Returned: code: 2  signal: null
+13 info lifecycle twitch-app@1.0.0~build: Failed to exec build script
+14 verbose stack Error: twitch-app@1.0.0 build: `webpack -p --env.prod`
+14 verbose stack Exit status 2
+14 verbose stack     at EventEmitter.<anonymous> (C:\Users\Sac a Moule\AppData\Roaming\npm\node_modules\npm\lib\utils\lifecycle.js:242:16)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at EventEmitter.emit (events.js:191:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\Users\Sac a Moule\AppData\Roaming\npm\node_modules\npm\lib\utils\spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:106:13)
+14 verbose stack     at ChildProcess.emit (events.js:191:7)
+14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+15 verbose pkgid twitch-app@1.0.0
+16 verbose cwd E:\Dev\twitch-app
+17 error Windows_NT 6.1.7601
+18 error argv "E:\\Dev\\nodejs\\node.exe" "C:\\Users\\Sac a Moule\\AppData\\Roaming\\npm\\node_modules\\npm\\bin\\npm-cli.js" "run" "build"
+19 error node v6.9.1
+20 error npm  v3.10.5
+21 error code ELIFECYCLE
+22 error twitch-app@1.0.0 build: `webpack -p --env.prod`
+22 error Exit status 2
+23 error Failed at the twitch-app@1.0.0 build script 'webpack -p --env.prod'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the twitch-app package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     webpack -p --env.prod
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs twitch-app
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls twitch-app
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
